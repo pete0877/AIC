@@ -1,0 +1,46 @@
+. Client connects to server
+. Server accepts connection and sends 'AIC (arena: baseline1)'
+. Client sends its name: 'NAME:rexer'
+. When server is ready to join the client into a game, the server sends:
+JOINING:arena type\n
+SIZE:xsize,ysize\n
+MAP:x,y|height,color,heat,hardness,repchar; x,y|height,color,heat,hardness,repchar;...
+POS:xpos,ypos
+ARMER:0
+DEMAGE:0
+SPEED:1
+FIREPOWER:0
+FIRESPEED:0
+BEGIN
+
+Clients sends actions
+MOVE: up|down|right|left
+MOVE: up|down|right|left
+MOVE: up|down|right|left
+.. up to drive speed number
+FIRE: xpos,ypos
+FIRE: xpos,ypos
+FIRE: xpos,ypos
+.. up to fire speed number
+DONE
+
+
+
+
+
+Server can respond with:
+GAMEOVER:rank
+
+
+MAP:x,y|height,color,heat,hardness,repchar; x,y|height,color,heat,hardness,repchar;...
+POS:xpos,ypos
+ARMER:0
+DEMAGE:0
+SPEED:1
+FIREPOWER:0
+FIRESPEED:0
+BEGIN
+
+	
+
+	
